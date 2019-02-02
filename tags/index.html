@@ -17,7 +17,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+<meta property="og:url" content="https://hfutzzw.github.io/tags/index.html">
 <meta property="og:site_name" content="Zhiwei Zhao&#39;s Blog">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2019-02-02T08:48:25.073Z">
@@ -70,12 +70,14 @@
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: 
+        search: false
     }
 </script>
 
 
-    <script> yiliaConfig.jquery_ui = [false]; </script>
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
 
 
 
@@ -418,7 +420,7 @@
     <div id="disqus_thread"></div>
     <script>
         var disqus_config = function(){
-            this.page.url = 'http://yoursite.com/tags/index.html';
+            this.page.url = 'https://hfutzzw.github.io/tags/index.html';
             this.page.identifier = 'tags/index.html';
         };
         var loadComment = function(){
@@ -498,6 +500,27 @@
 
 
 
+
+
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 <div class="scroll" id="scroll">

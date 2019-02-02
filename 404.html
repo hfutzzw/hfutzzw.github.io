@@ -18,7 +18,7 @@
 <meta name="description" content=".article-header {        padding: 0;        padding-top: 26px;        border-left: none;        text-align: center;    }    .article-header:hover {        border-left: none;    }    .article-title">
 <meta property="og:type" content="website">
 <meta property="og:title" content="404 Not Found：该页无法显示">
-<meta property="og:url" content="http://yoursite.com/404.html">
+<meta property="og:url" content="https://hfutzzw.github.io/404.html">
 <meta property="og:site_name" content="Zhiwei Zhao&#39;s Blog">
 <meta property="og:description" content=".article-header {        padding: 0;        padding-top: 26px;        border-left: none;        text-align: center;    }    .article-header:hover {        border-left: none;    }    .article-title">
 <meta property="og:locale" content="zh-Hans">
@@ -73,12 +73,14 @@
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: 
+        search: false
     }
 </script>
 
 
-    <script> yiliaConfig.jquery_ui = [false]; </script>
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
 
 
 
@@ -442,6 +444,27 @@ padding: 0;
 
 
 
+
+
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 <div class="scroll" id="scroll">
