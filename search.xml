@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>hello hexo</title>
+      <link href="/2019/02/02/hello-hexo/"/>
+      <url>/2019/02/02/hello-hexo/</url>
+      
+        <content type="html"><![CDATA[<p>#thank you<br>fsdakdjf</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> deeplearning  machinelearning </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2019/02/01/hello-world/"/>
       <url>/2019/02/01/hello-world/</url>
