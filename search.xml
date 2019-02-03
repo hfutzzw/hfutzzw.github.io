@@ -4,38 +4,24 @@
   
     
     <entry>
-      <title>test</title>
-      <link href="/2019/02/03/test/"/>
-      <url>/2019/02/03/test/</url>
+      <title>新年快乐</title>
+      <link href="/2019/02/03/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/"/>
+      <url>/2019/02/03/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/</url>
       
-        <content type="html"><![CDATA[<script type="math/tex; mode=display">x+y=z</script><script type="math/tex; mode=display">x^2+y^2=z^2</script><script type="math/tex; mode=display">x^2+y^2=\theta^2</script><script type="math/tex; mode=display">lim_{1\to+\infty}P(|\frac{1}{n}\sum_i^nX_i-\mu|<\epsilon)=1, i=1,...,n</script><a id="more"></a><script type="math/tex; mode=display">\begin{matrix} 1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2 \end{matrix}</script><script type="math/tex; mode=display">f(n)=\begin{cases}n/2, & \text{如果$ x<=2 $}\\3n+1, & \text{如果$ x>2 $}\end{cases}</script><script type="math/tex; mode=display">\begin{array}{c|lcr} n & \text{Left} & \text{Center} & \text{Right} \\ \hline 1 & 0.24 & 1 & 125 \\ 2 & -1 & 189 & -8 \\ 3 & -20 & 2000 & 1+10i \\ \end{array}</script>]]></content>
-      
-      
-      <categories>
-          
-          <category> code </category>
-          
-      </categories>
+        <content type="html"><![CDATA[<p>祝某个小朋友新年快乐<br><img src="//hfutzzw.github.io/2019/02/03/新年快乐/happy.jpg" alt="新年快乐"></p>]]></content>
       
       
-        <tags>
-            
-            <tag> machine learning </tag>
-            
-            <tag> deeplearning </tag>
-            
-        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title>Hello World</title>
-      <link href="/2019/02/01/hello-world/"/>
-      <url>/2019/02/01/hello-world/</url>
+      <title>test</title>
+      <link href="/2019/02/03/test/"/>
+      <url>/2019/02/03/test/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br><span class="line">$ hexo new page <span class="string">"My new page"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<script type="math/tex; mode=display">x+y=z</script><script type="math/tex; mode=display">x^2+y^2=z^2</script><script type="math/tex; mode=display">x^2+y^2=\theta^2</script><script type="math/tex; mode=display">lim_{1\to+\infty}P(|\frac{1}{n}\sum_i^nX_i-\mu|<\epsilon)=1, i=1,...,n</script><a id="more"></a><script type="math/tex; mode=display">\begin{matrix} 1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2 \end{matrix}</script><script type="math/tex; mode=display">f(n)=\begin{cases}n/2, & \text{如果$ x<=2 $}\\3n+1, & \text{如果$ x>2 $}\end{cases}</script><script type="math/tex; mode=display">\begin{array}{c|lcr} n & \text{Left} & \text{Center} & \text{Right} \\ \hline 1 & 0.24 & 1 & 125 \\ 2 & -1 & 189 & -8 \\ 3 & -20 & 2000 & 1+10i \\ \end{array}</script>]]></content>
       
       
       <categories>
