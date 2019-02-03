@@ -4,13 +4,27 @@
   
     
     <entry>
-      <title></title>
+      <title>test</title>
       <link href="/2019/02/03/test/"/>
       <url>/2019/02/03/test/</url>
       
-        <content type="html"><![CDATA[<hr><p>title: test<br>date: 2019-02-03 12:26:33<br>tags: </p><ul><li>machine learning</li><li>deeplearning<br>categories:</li><li>code</li></ul><p>Dear best wishes to you!<br><a id="more"></a></p><pre><code>fdsakfdhjkdsafsakljgfkdagfdakghjghfkjdaghk</code></pre><p>$$ \sum_{i=1}^n \frac{1}{i+1}* \frac{\partial{y}}{\partial x} $$</p><p>$$\begin{bmatrix}<br>{a_{11}}&amp;{a_{12}}&amp;{\cdots}&amp;{a_{1n}}\<br>{a_{21}}&amp;{a_{22}}&amp;{\cdots}&amp;{a_{2n}}\<br>{\vdots}&amp;{\vdots}&amp;{\ddots}&amp;{\vdots}\<br>{a_{m1}}&amp;{a_{m2}}&amp;{\cdots}&amp;{a_{mn}}\<br>\end{bmatrix}$$</p><p>$$\begin{cases}<br>a_1x+b_1y+c_1z=d_1\<br>a_2x+b_2y+c_2z=d_2\<br>a_3x+b_3y+c_3z=d_3\<br>\end{cases}<br>$$</p><p>$$\begin{equation}<br>x^n+y^n=z^n<br>\end{equation}$$</p>]]></content>
+        <content type="html"><![CDATA[<p>Dear best wishes to you!<br><a id="more"></a></p><pre><code>fdsakfdhjkdsafsakljgfkdagfdakghjghfkjdaghk</code></pre><p>$$ \sum_{i=1}^n \frac{1}{i+1}* \frac{\partial{y}}{\partial x} $$</p><p>$$\begin{bmatrix}<br>{a_{11}}&amp;{a_{12}}&amp;{\cdots}&amp;{a_{1n}}\<br>{a_{21}}&amp;{a_{22}}&amp;{\cdots}&amp;{a_{2n}}\<br>{\vdots}&amp;{\vdots}&amp;{\ddots}&amp;{\vdots}\<br>{a_{m1}}&amp;{a_{m2}}&amp;{\cdots}&amp;{a_{mn}}\<br>\end{bmatrix}$$</p><p>$$\begin{cases}<br>a_1x+b_1y+c_1z=d_1\<br>a_2x+b_2y+c_2z=d_2\<br>a_3x+b_3y+c_3z=d_3\<br>\end{cases}<br>$$</p><p>$$\begin{equation}<br>x^n+y^n=z^n<br>\end{equation}$$</p>]]></content>
       
       
+      <categories>
+          
+          <category> code </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> machine learning </tag>
+            
+            <tag> deeplearning </tag>
+            
+        </tags>
       
     </entry>
     
