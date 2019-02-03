@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>test</title>
+      <link href="/2019/02/03/test/"/>
+      <url>/2019/02/03/test/</url>
+      
+        <content type="html"><![CDATA[<p>Dear best wishes to you!<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fdsakfdhjkdsa</span><br><span class="line">fsakljgfkda</span><br><span class="line">gfdakghj</span><br><span class="line">ghfkjdaghk</span><br></pre></td></tr></table></figure></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> code </category>
+          
+          <category> markdown </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> machine learning </tag>
+            
+            <tag> deeplearning </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2019/02/01/hello-world/"/>
       <url>/2019/02/01/hello-world/</url>
