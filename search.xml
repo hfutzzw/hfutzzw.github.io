@@ -4,29 +4,13 @@
   
     
     <entry>
-      <title>test</title>
+      <title></title>
       <link href="/2019/02/03/test/"/>
       <url>/2019/02/03/test/</url>
       
-        <content type="html"><![CDATA[<p>Dear best wishes to you!<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fdsakfdhjkdsa</span><br><span class="line">fsakljgfkda</span><br><span class="line">gfdakghj</span><br><span class="line">ghfkjdaghk</span><br></pre></td></tr></table></figure></p>]]></content>
+        <content type="html"><![CDATA[<hr><p>title: test<br>date: 2019-02-03 12:26:33<br>tags: </p><ul><li>machine learning</li><li>deeplearning<br>categories:</li><li>code</li></ul><p>Dear best wishes to you!<br><a id="more"></a></p><pre><code>fdsakfdhjkdsafsakljgfkdagfdakghjghfkjdaghk</code></pre><p>$$ \sum_{i=1}^n \frac{1}{i+1}* \frac{\partial{y}}{\partial x} $$</p>]]></content>
       
       
-      <categories>
-          
-          <category> code </category>
-          
-          <category> markdown </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> machine learning </tag>
-            
-            <tag> deeplearning </tag>
-            
-        </tags>
       
     </entry>
     
