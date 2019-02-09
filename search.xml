@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>行人重识别资源整理</title>
+      <link href="/2019/02/09/%E8%A1%8C%E4%BA%BA%E9%87%8D%E8%AF%86%E5%88%AB%E8%B5%84%E6%BA%90%E6%95%B4%E7%90%86/"/>
+      <url>/2019/02/09/%E8%A1%8C%E4%BA%BA%E9%87%8D%E8%AF%86%E5%88%AB%E8%B5%84%E6%BA%90%E6%95%B4%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<p>近期所做的本科毕业设计是基于深度学习的行人重识别，从2019年1月份正式开始进入这个课题，陆续阅读了几十篇这个领域的论文，阅读了几个写的很棒的代码库，做了不多的实验，觉得很有必要按照该领域的不同研究方法对论文进行整理归纳，也希望能维护一个<code>LeaderBoard</code>,对<code>BaseLine</code>,<code>State of the art</code>进行更新，也方便下学期英文论文的写作和对比试验的展开。我也会进行重识别领域主流数据集、开源代码的解读等工作。<br><a id="more"></a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机视觉 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 行人重识别 </tag>
+            
+            <tag> 深度学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Markdown&amp;&amp;Latex语法学习</title>
       <link href="/2019/02/09/Markdown-Latex%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/"/>
       <url>/2019/02/09/Markdown-Latex%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</url>
@@ -13,7 +40,7 @@
       
       <categories>
           
-          <category> Type </category>
+          <category> 排版 </category>
           
       </categories>
       
