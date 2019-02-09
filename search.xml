@@ -2,46 +2,6 @@
 <search> 
   
   
-    
-    <entry>
-      <title>新年快乐</title>
-      <link href="/2019/02/03/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/"/>
-      <url>/2019/02/03/%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90/</url>
-      
-        <content type="html"><![CDATA[<p>祝某个小朋友新年快乐<br><img src="//hfutzzw.github.io/2019/02/03/新年快乐/happy.jpg" alt="新年快乐"></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>test</title>
-      <link href="/2019/02/03/test/"/>
-      <url>/2019/02/03/test/</url>
-      
-        <content type="html"><![CDATA[<script type="math/tex; mode=display">x+y=z</script><script type="math/tex; mode=display">x^2+y^2=z^2</script><script type="math/tex; mode=display">x^2+y^2=\theta^2</script><script type="math/tex; mode=display">lim_{1\to+\infty}P(|\frac{1}{n}\sum_i^nX_i-\mu|<\epsilon)=1, i=1,...,n</script><a id="more"></a><script type="math/tex; mode=display">\begin{matrix} 1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2 \end{matrix}</script><script type="math/tex; mode=display">f(n)=\begin{cases}n/2, & \text{如果$ x<=2 $}\\3n+1, & \text{如果$ x>2 $}\end{cases}</script><script type="math/tex; mode=display">\begin{array}{c|lcr} n & \text{Left} & \text{Center} & \text{Right} \\ \hline 1 & 0.24 & 1 & 125 \\ 2 & -1 & 189 & -8 \\ 3 & -20 & 2000 & 1+10i \\ \end{array}</script>]]></content>
-      
-      
-      <categories>
-          
-          <category> code </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> machine learning </tag>
-            
-            <tag> deeplearning </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
   
   
 </search>
