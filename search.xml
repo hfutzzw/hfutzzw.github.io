@@ -8,7 +8,7 @@
       <link href="/2019/02/11/%E6%B7%B1%E5%BA%A6%E6%AE%8B%E5%B7%AE%E7%BD%91%E7%BB%9C-ResNet-%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E4%B8%8EPytorch%E5%AE%98%E6%96%B9%E5%AE%9E%E7%8E%B0%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/"/>
       <url>/2019/02/11/%E6%B7%B1%E5%BA%A6%E6%AE%8B%E5%B7%AE%E7%BD%91%E7%BB%9C-ResNet-%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E4%B8%8EPytorch%E5%AE%98%E6%96%B9%E5%AE%9E%E7%8E%B0%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/</url>
       
-        <content type="html"><![CDATA[<p><strong>深度残差网络(ResNet)</strong>是由微软亚洲研究院(<a href="https://www.msra.cn/" target="_blank" rel="noopener">MSRA</a>)的<a href="http://kaiminghe.com/" target="_blank" rel="noopener">Kaiming He</a>等人于2015年做出的具有里程碑意义的工作。ResNet现在也是深度学习、计算机视觉领域使用最广泛的网络架构，这篇论文：<a href="https://arxiv.org/pdf/1512.03385.pdf" target="_blank" rel="noopener">Deep Residual Learning for Image Recognition</a>同时也是CVPR2016最佳论文。这篇博客是我对ResNet设计思想的个人理解，同时也对Pytorch官方实现的<a href="https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py" target="_blank" rel="noopener">ResNet源码</a>进行讲解，与诸君共勉……<br><a id="more"></a><br>hhhh<br><div class="row">    <embed src="https://arxiv.org/pdf/1512.03385.pdf" width="100%" height="550" type="application/pdf"></div></p>]]></content>
+        <content type="html"><![CDATA[<p><strong>深度残差网络(ResNet)</strong>是由当时来自微软亚洲研究院(<a href="https://www.msra.cn/" target="_blank" rel="noopener">MSRA</a>)的<a href="http://kaiminghe.com/" target="_blank" rel="noopener">Kaiming He</a>等人于2015年做出的具有里程碑意义的工作。ResNet现在也是深度学习、计算机视觉领域使用最广泛的网络架构，这篇论文：<a href="https://arxiv.org/pdf/1512.03385.pdf" target="_blank" rel="noopener">Deep Residual Learning for Image Recognition</a> 同时也是CVPR2016年度最佳论文。结合Paper以及Kaiming He在ICML2016上做的Tutorials,我写下了这篇blog,同时也对Pytorch官方实现的<a href="https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py" target="_blank" rel="noopener">ResNet源码</a>进行解析，与诸君共勉。<br><a id="more"></a></p><h1 id="ResNet的主要思想"><a href="#ResNet的主要思想" class="headerlink" title="ResNet的主要思想"></a>ResNet的主要思想</h1><p>自从ImageNet挑战赛举办以来，<code>AlexNet,VGGNet,GoogleNet</code>不断刷新<code>Top-5 error</code>和CNN的深度，深度学习也逐渐蓬勃发展。<br><img src="//hfutzzw.github.io/2019/02/11/深度残差网络-ResNet-论文阅读与Pytorch官方实现源码分析/depth.png" alt="depth"><br>然而，简单增加网络的深度却不可行，在ImageNet和CIFAR数据集上的实验表明，在训练集和验证集上的错误率深层网络都比浅层网络要高，所以这并不是由<strong>过拟合</strong>引起的。<br><img src="//hfutzzw.github.io/2019/02/11/深度残差网络-ResNet-论文阅读与Pytorch官方实现源码分析/degradation.png" alt="degradation"><br>训练深层网络通常会遇到梯度消失或者梯度爆炸现象，但是通过合适的权重初始化策略:(msra/xavier init)和    <a href="https://arxiv.org/abs/1502.03167" target="_blank" rel="noopener">Batch Normalization</a>技术，这一问题可以得到有效缓解。所以梯度也不应该成为主要原因。作者认为深层网络虽然表示学习能力增强，但是却陷入了<strong>优化难题</strong>。<br>退而求其次，<strong>如果我们增加的层可以学习一个恒等映射的话，那么至少深层网络的性能不会比浅层网络的差</strong>，然而事实相反，性能急剧下降。所以有理由相信，我们增加的层很难去学习一个恒等映射。那为什么不直接给它加上一个恒等映射，而去学习更容易的残差呢？大道至简，ResNet由此而来。<br><img src="//hfutzzw.github.io/2019/02/11/深度残差网络-ResNet-论文阅读与Pytorch官方实现源码分析/basicblock.png" alt="basicblock"><br>通过引入残差连接，深层网络的优化难题得到解决，通过堆叠更多的残差快，网络表示学习得到了极大提升。<br><img src="//hfutzzw.github.io/2019/02/11/深度残差网络-ResNet-论文阅读与Pytorch官方实现源码分析/imagenet.png" alt="imagenet"></p><h1 id="ResNet50-101-152-网络结构"><a href="#ResNet50-101-152-网络结构" class="headerlink" title="ResNet50/101/152 网络结构"></a>ResNet50/101/152 网络结构</h1><p>ResNet已成为主流的Backbone,所以有必要熟悉<code>ResNet50/101/152</code>的网络结构。<br>为了降低网络参数量和计算复杂度，作者引入了<code>BotteleNeck</code>结构，在超过50层的网络中使用<code>BottleNeck</code>来代替原始的残差块。<br><img src="//hfutzzw.github.io/2019/02/11/深度残差网络-ResNet-论文阅读与Pytorch官方实现源码分析/bottleneck.png" alt="bottleneck"><br><code>ResNet50/101/152</code>的网络结构配置如下表所示：<br><img src="//hfutzzw.github.io/2019/02/11/深度残差网络-ResNet-论文阅读与Pytorch官方实现源码分析/arch.png" alt="arch"></p><h1 id="ResNet如何解决优化难题"><a href="#ResNet如何解决优化难题" class="headerlink" title="ResNet如何解决优化难题"></a>ResNet如何解决优化难题</h1><p>如果我们不采用<code>ReLU</code>作为Add之后的激活函数，那么残差块就可以表示为下图所示：<br><img src="//hfutzzw.github.io/2019/02/11/深度残差网络-ResNet-论文阅读与Pytorch官方实现源码分析/relu.png" alt="relu"></p><script type="math/tex; mode=display">x_{l+1}=x_l+F(x_l)\\   x_{l+2}=x_{l+1}+F(x_{l+1})\\   so,\; x_{l+2}=x_{l}+F(x_{l})+F(x_{l+1})</script><p>通过归纳整理，我们可以看出</p><script type="math/tex; mode=display">x_{L}=x_l+ \sum_{i=l}^{L-1}F(x_{i})</script><ul><li><p>前向传播<br>前向传播变为加法而不是乘法,$x_L=\prod_{i=l}^{L-1}W_i x_i$,前向传播变得更为平滑</p></li><li><p>反向传播</p><script type="math/tex; mode=display">\frac{\partial{E}}{\partial{x_l}}=\frac{\partial{E}}{\partial{x_L}}\frac{\partial{x_L}}{\partial{x_l}}=\frac{\partial{E}}{\partial{x_L}}(1+\frac{\partial}{\partial{x_l}}\sum_{i=1}^{L-1}F(x_i))</script><p>梯度传播是加法，不是乘法，梯度不会消失或爆炸</p></li></ul><h1 id="Pytorch-ResNet源码解析"><a href="#Pytorch-ResNet源码解析" class="headerlink" title="Pytorch ResNet源码解析"></a>Pytorch ResNet源码解析</h1><p>Pytorch ResNet源码解析见下一篇</p>]]></content>
       
       
       <categories>
@@ -22,9 +22,9 @@
       
         <tags>
             
-            <tag> 卷积神经网络 </tag>
-            
             <tag> 深度学习 </tag>
+            
+            <tag> 卷积神经网络 </tag>
             
         </tags>
       
@@ -49,9 +49,9 @@
       
         <tags>
             
-            <tag> 深度学习 </tag>
-            
             <tag> 行人重识别 </tag>
+            
+            <tag> 深度学习 </tag>
             
         </tags>
       
