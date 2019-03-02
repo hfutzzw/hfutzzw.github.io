@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>计算机视觉中的Attention机制</title>
+      <link href="/2019/03/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E4%B8%AD%E7%9A%84Attention%E6%9C%BA%E5%88%B6/"/>
+      <url>/2019/03/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89%E4%B8%AD%E7%9A%84Attention%E6%9C%BA%E5%88%B6/</url>
+      
+        <content type="html"><![CDATA[<p>最近这段时间在阅读<strong>注意力机制(Attention Mechanism)</strong>在计算机视觉中的应用，主要分为以下几点：</p><ol><li><code>Spatial Attention (Residual Attention Neural Network)</code></li><li><code>Channel Attention (SENET ImageNet2017 Champion)</code></li><li><code>Self Attention / Nonlocal Neural Network BY FAIR</code></li><li><code>Spatial Transformer Networks BY DeepMind</code><br>最近太忙，以后有时间再具体总结……<a id="more"></a></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机视觉 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 深度学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ResNet Pytorch官方实现源码解析</title>
       <link href="/2019/02/12/ResNet-Pytorch%E5%AE%98%E6%96%B9%E5%AE%9E%E7%8E%B0%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
       <url>/2019/02/12/ResNet-Pytorch%E5%AE%98%E6%96%B9%E5%AE%9E%E7%8E%B0%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/</url>
